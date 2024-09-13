@@ -23,4 +23,4 @@ It represents a set of managed resources as a single kubernetes object inside a 
 
 ***The general workflow for using/creating all the above resources will look like;***
 
-`Application` claims Composite Resource through -> `Claim `-> Claim interact with `Composite Resource` -> Composite Resource composes `Managed Resources`. Composite requires `XRDs` (Defines Composite Resource and Claim) and `Composition` (Configures Composite Resource).
+`Application` claims Composite Resource through -> `Claim `-> Claim interacts with `Composite Resource` -> Composite Resource composes `Managed Resources`. Composite Resource requires `XRDs` (Defines Composite Resource and Claim) and `Composition` (Configures Composite Resource).
