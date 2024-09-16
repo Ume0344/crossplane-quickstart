@@ -1,7 +1,11 @@
 # Crossplane
 
 ### Providers
-Providers enable crossplane to provision external infrastructure. They enable all aspects to connect kubernetes with external services. i.e, Provider AWS, Provider GCP
+Providers enable crossplane to provision external infrastructure. They enable all aspects to connect kubernetes with external services. i.e, Provider AWS, Provider GCP.
+
+Providers have two different types of configurations;
+- `ProviderConfig` - Customizes the settings to communicate with external provider (AWS, GCP). i.e, for-example  we use `ProviderConfig` for cloud provider authentication.
+- `ControllerConfig` - It changes the settings of Provider's pod running inside of kubernetes cluster. It is mostly used to provide `args` to a Provider's pod to enable optional services. For example, enabling external secret stores for a provider.
 
 ### Managed Resources
 It represents an external service in a Provider. For example, AWS EC2, AWS SNS is a managed resource. When we create a managed resource, the Provider creates external resource inside Provider's environment.
